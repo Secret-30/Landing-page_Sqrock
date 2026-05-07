@@ -255,3 +255,29 @@ footer {
     text-transform: uppercase;
     margin-top: 5px;
 }
+/* --- New Menu Details Styles --- */
+.price {
+    font-weight: bold;
+    color: #6f4e37; 
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #d4a373;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px; 
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.custom-note {
+    font-size: 0.8rem;
+    color: #888; 
+    font-style: italic;
+    margin-top: 5px;
+}
