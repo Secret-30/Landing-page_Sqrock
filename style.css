@@ -12,7 +12,7 @@
 .hero {
     height: 100vh; /* Takes up full screen height */
     background-color: #f4d03f; /* Warm coffee-shop yellow */
-    display: flex;
+    display: center;
     flex-direction: column;
     justify-content: center; /* Centers vertically */
     align-items: center;     /* Centers horizontally */
