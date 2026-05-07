@@ -1,0 +1,240 @@
+ html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 100vh; /* Takes up full screen height */
+    background-color: #f4d03f; /* Warm coffee-shop yellow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center;     /* Centers horizontally */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #4a2c2a; /* Dark coffee brown */
+    margin-bottom: 10px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #4a2c2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero button:hover {
+    background-color: #4b3525;
+}
+/* Update your .hero rule in style.css */
+.hero {
+    height: 100vh;
+    /* Add these two lines */
+    background: linear-gradient(rgba(39, 14, 14, 0.5), rgba(80, 58, 58, 0.5)), url('BLP.img/frontcoffee.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Keep your existing flex code below */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Change text color to white so it's readable over the image */
+}
+
+/* Update your h1 to be white too */
+.hero h1 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.feature-item {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to drop to next line */
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.menu-item {
+    width: 250px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Keeps image aspect ratio */
+    border-radius: 10px;
+}/* 1. This applies to the entire webpage background */
+body {
+    /* Choose your main page background color here (e.g., a warm coffee tone) */
+    background-color: #f1e7dc; 
+
+    /* If you prefer a full-screen background image instead, 
+       ensure you have a file named 'images/background.jpg' and use this: */
+    /* background-image: url('images/background.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-attachment: fixed; /* This keeps the background still while you scroll */ */
+}
+
+/* 2. This applies to the individual coffee card containers */
+.menu-item {
+    width: 250px;
+    text-align: center;
+    border: 1px solid #603b3b;
+    padding: 15px;
+    border-radius: 30px;
+    transition: transform 0.3s;
+    
+    /* --- KEY CHANGE HERE --- */
+    background-color: #f6eaea; /* This keeps the inside of the menu items white */
+    
+    /* Optional: Add a subtle shadow to make the cards 'pop' off the new background */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}body {
+    /* The first part (rgba) is the semi-transparent color overlay */
+    /* The second part (url) is your background image */
+    background: linear-gradient(rgba(125, 101, 101, 0.5), rgba(209, 193, 193, 0.654)), 
+                url('images/bg.png');
+    
+    /* These ensure the image covers the whole page */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}/* Only affects the Back to Home link */
+.footer-link {
+    text-align: center;    /* Keeps it in the middle */
+    padding: 20px;         /* Adds space around it */
+    clear: both;           /* Prevents it from being pushed to the side */
+}
+
+.footer-link a {
+    font-weight: 800;      /* Makes it bold/heavy */
+    font-size: 1.2rem;     /* Makes it a bit larger/visible */
+    color: #4a2c2a;        /* Keeps your chosen text color */
+    text-decoration: none; /* Keeps it clean */
+}
+.menu-item {
+    transition: transform 0.3s ease; /* Makes the movement smooth */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Slightly zooms in when the mouse is over it */
+    box-shadow: 0 8px 16px rgba(112, 106, 106, 0.2); /* Adds a soft shadow for depth */
+}
+/* Change this in your style.css */
+.hero {
+    .contact-section {
+    background-color: #2d1b1a; /* Dark coffee color for contrast */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #f1e7dc; /* Soft color for links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+    min-height: 100vh; /* Instead of fixed height, it will now expand */
+    /* ... rest of your code ... */
+}
+/* Add this to the very bottom of style.css */
+footer {
+    display: block !important;
+    visibility: visible !important;
+    position: relative;
+    z-index: 999;
+    background-color: #2d1b1a; /* Dark brown */
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+    width: 100%;
+}
+/* This forces the footer to break out of any grid/flex layouts */
+.contact-section {
+    display: block !important;
+    width: 100% !important;
+    clear: both !important;
+    background-color: #7a605e; /* Dark brown */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    overflow: visible !important;
+}
+
+
+.footer-link {
+    margin-top: 20px; /* Space between contact info and the button */
+}/* If the screen is smaller than 768px (like a tablet or phone) */
+@media (max-width: 768px) {
+    /* Stack your menu items vertically instead of in a grid */
+    .menu-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* Make the footer text a bit smaller so it fits */
+    .contact-section {
+        padding: 20px 10px;
+    }
+}.menu-item {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
