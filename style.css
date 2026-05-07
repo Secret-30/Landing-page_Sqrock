@@ -281,3 +281,10 @@ footer {
     font-style: italic;
     margin-top: 5px;
 }
+.nav-link {
+    text-decoration: none;
+    color: #6f4e37;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
