@@ -281,17 +281,4 @@ footer {
     font-style: italic;
     margin-top: 5px;
 }
-.nav-link {
-    text-decoration: none;
-    color: #6f4e37;
-    font-weight: bold;
-    padding: 10px;
-    display: inline-block;
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    margin-top: 50px;
-    font-size: 0.9rem;
-}
+
